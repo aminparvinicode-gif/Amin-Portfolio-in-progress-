@@ -1,0 +1,509 @@
+/* تنظیمات پایه و متغیرها */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* اضافه کردن ترانزیشن نرم برای تغییر تم */
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+:root {
+  /* رنگ‌های اصلی گوگل */
+  --blue-google: #4285f4;
+  --red-google: #ea4335;
+  --yellow-google: #fbbc05;
+  --green-google: #34a853;
+
+  /* --- تم روشن (Light Theme) --- */
+  --bg-body: #ffffff;
+  --bg-section: #eff6ff;
+  --bg-header: #ffffff;
+  --bg-search: #f3f4f6;
+  --bg-calculator: #ffffff;
+  --bg-result: #f0fdf4;
+  --text-main: #000000;
+  --text-muted: #535353;
+  --btn-default: #e5e7eb;
+  --btn-wide: #d1d5db;
+  --btn-hover: rgb(197, 196, 196);
+  --border-light: rgba(128, 128, 128, 0.418);
+  --nav-btn-bg: #60a5fa;
+  --nav-btn-hover: #76b2fa;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --shadow-blue: rgba(2, 121, 219, 0.3);
+  --svg-stroke: black;
+}
+
+/* --- تم تاریک (Dark Theme) --- */
+body.dark-mode {
+  --bg-body: #202124;
+  --bg-section: #171717;
+  --bg-header: #202124;
+  --bg-search: #303134;
+  --bg-calculator: #303134;
+  --bg-result: #202124;
+  --text-main: #e8eaed;
+  --text-muted: #9aa0a6;
+  --btn-default: #3c4043;
+  --btn-wide: #5f6368;
+  --btn-hover: #4e5156;
+  --border-light: rgba(255, 255, 255, 0.1);
+  --nav-btn-bg: #3c4043;
+  --nav-btn-hover: #4285f4;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --shadow-blue: rgba(66, 133, 244, 0.15);
+  --svg-stroke: #e8eaed;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+}
+
+/* استایل هدر */
+#header {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-header);
+  user-select: none;
+}
+
+#header_left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+
+#header_img {
+  height: auto;
+  width: 8%;
+}
+
+#dark_mode {
+  user-select: none;
+  height: 50px;
+  width: 50px;
+  background-color: var(--bg-search);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+#dark_mode:hover {
+  transform: scale(1.05);
+}
+
+#moon {
+  font-size: 22px;
+  color: var(--text-main);
+  transition: all 0.4s ease;
+}
+
+#header_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  background-color: var(--bg-search);
+  position: relative;
+  border-radius: 40px;
+  margin-left: 50%;
+  cursor: pointer;
+}
+
+#calculate {
+  width: 85%;
+  background-color: transparent;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 40px;
+  border: none;
+  caret-color: var(--green-google);
+  color: var(--text-main);
+}
+
+#calculate::placeholder {
+  color: var(--text-muted);
+}
+
+#back_to_width {
+  margin-right: 15px;
+  color: var(--text-muted);
+}
+#Enter {
+  width: 6%;
+  height: 40px;
+  background-color: var(--blue-google);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+#Enter p {
+  font-weight: bold;
+  color: white;
+  font-family: tahoma, Geneva, Tahoma, sans-serif;
+}
+
+/* استایل سکشن اصلی */
+#section {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 650px;
+  background-color: var(--bg-section);
+}
+
+#father_of_main_calculator {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_calculator {
+  height: 70%;
+  width: 700px;
+  background-color: var(--bg-calculator);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow:
+    0 15px 30px -10px var(--shadow-blue),
+    0 30px 60px -20px var(--shadow-color);
+  font-family: tahoma, Geneva, Tahoma, sans-serif;
+}
+
+#result {
+  width: 85%;
+  height: 90px;
+  background-color: var(--bg-result);
+  color: var(--text-main);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 40px;
+  padding-right: 15px;
+  border: 4px solid;
+  border-top-color: var(--blue-google);
+  border-left-color: var(--red-google);
+  border-bottom-color: var(--yellow-google);
+  border-right-color: var(--green-google);
+  font-family:
+    "Vazirmatn", "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+  animation: border_animation 5s linear infinite alternate;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#persons_calculate {
+  display: flex;
+  font-size: 20px;
+  padding-right: 15px;
+  color: var(--text-muted);
+}
+
+#numbers_operators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#first_col,
+#second_col,
+#third_col,
+#forth_col,
+#fifth_col,
+#sixth_col,
+#seventh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* حل مشکل آیکون رادیکال در دارک مود */
+path[stroke="black"] {
+  stroke: var(--svg-stroke);
+}
+
+/* استایل دکمه‌های استاندارد */
+#pro,
+#pro1,
+#green_border,
+#red_border,
+#blue_border_copy {
+  width: 65px;
+  height: 50px;
+  background-color: var(--btn-default);
+  color: var(--text-main);
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+/* اختصاص رنگ حاشیه دکمه‌ها */
+#pro {
+  border-color: var(--blue-google);
+}
+#pro1 {
+  border-color: var(--red-google);
+}
+#green_border {
+  border-color: var(--green-google);
+}
+#red_border {
+  border-color: var(--red-google);
+}
+#blue_border_copy {
+  border-color: var(--blue-google);
+}
+#third_col #pro {
+  border-color: var(--yellow-google);
+}
+
+/* دکمه‌های ستون سوم (عرض بیشتر) */
+#third_col #pro {
+  width: 79px;
+  background-color: var(--btn-wide);
+}
+
+/* دکمه پاک کردن (سطل زباله) */
+#forth_col #pro:first-child {
+  color: var(--red-google);
+  border-color: var(--red-google);
+}
+
+/* دکمه مساوی (بزرگ) */
+#black_border {
+  width: 65px;
+  height: 105px;
+  background-color: var(--blue-google);
+  border: 2px solid var(--blue-google);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+}
+
+/* هاور و اکتیو برای دکمه‌های معمولی */
+#numbers_operators > div > div {
+  transform: scale(1);
+}
+
+#numbers_operators > div > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  filter: brightness(0.9);
+}
+
+body.dark-mode #numbers_operators > div > div:hover {
+  filter: brightness(1.2);
+}
+
+#numbers_operators > div > div:active {
+  background-color: var(--btn-hover);
+  transform: translateY(0);
+}
+
+#black_border:active {
+  background-color: #2b6bdc;
+}
+
+/* استایل منوی کناری */
+#nav {
+  position: absolute;
+  left: 0px;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px solid var(--border-light);
+  background-color: var(--bg-header);
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#history_box,
+#sciece_box {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-btn-bg);
+  color: var(--text-main);
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  gap: 10px;
+  cursor: pointer;
+  font-family: tahoma, Geneva, Tahoma, sans-serif;
+}
+#history_box {
+  animation: nav_box_history 0.5s ease forwards;
+}
+#sciece_box {
+  animation: nav_box_science 0.5s ease forwards;
+}
+#history_box:hover,
+#sciece_box:hover {
+  background-color: rgb(105, 109, 211);
+}
+
+/* جداکننده در منو */
+#nav > div:nth-child(2) {
+  width: 90%;
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+/* انیمیشن بوردر (بدون تغییر) */
+@keyframes border_animation {
+  0% {
+    border-top-color: var(--blue-google);
+    border-left-color: var(--red-google);
+    border-bottom-color: var(--yellow-google);
+    border-right-color: var(--green-google);
+  }
+  35% {
+    border-top-color: var(--red-google);
+    border-left-color: var(--blue-google);
+    border-bottom-color: var(--green-google);
+    border-right-color: var(--yellow-google);
+  }
+  65% {
+    border-top-color: var(--green-google);
+    border-left-color: var(--yellow-google);
+    border-bottom-color: var(--red-google);
+    border-right-color: var(--blue-google);
+  }
+  100% {
+    border-top-color: var(--blue-google);
+    border-left-color: var(--red-google);
+    border-bottom-color: var(--yellow-google);
+    border-right-color: var(--green-google);
+  }
+}
+
+#Enter p {
+  color: black;
+}
+
+#menu {
+  margin-left: 10px;
+  display: none;
+}
+
+#double_click {
+  position: absolute;
+  top: 60px;
+  font-size: 10px;
+  font-family: tahoma, Geneva, Tahoma, sans-serif;
+  user-select: none;
+  display: none;
+}
+
+#back_to_menu {
+  display: none;
+}
+
+#back_to_menu {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+#back_to_menu:active {
+  animation: back_to_menu_anim 0.5s ease forwards;
+}
+@keyframes nav_box_history {
+  0% {
+    position: absolute;
+    bottom: -30px;
+  }
+  to {
+    position: absolute;
+    bottom: 80%;
+  }
+}
+@keyframes nav_box_science {
+  0% {
+    position: absolute;
+    bottom: -30px;
+  }
+  to {
+    position: absolute;
+    bottom: 88%;
+  }
+}
+
+@keyframes back_to_menu_anim {
+  from {
+    position: absolute;
+    left: 10px;
+  }
+  to {
+    position: absolute;
+    left: -30px;
+  }
+}
+
+.box {
+  font-family: tahoma, Geneva, Tahoma, sans-serif;
+  display: none; /* به صورت پیش‌فرض مخفی است تا زمانی که روی دکمه تاریخچه کلیک شود */
+  opacity: 0;
+  width: 90%;
+  height: 60px;
+  background: #4caf50;
+  margin: 5px;
+  border-radius: 8px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}

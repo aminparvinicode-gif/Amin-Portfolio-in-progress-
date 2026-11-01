@@ -1,0 +1,225 @@
+/* فایل رسپانسیو برای موبایل و تبلت (320px تا 767px) */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+  /* تنظیمات کلی بادی برای موبایل */
+  body {
+    overflow-y: auto; /* اجازه اسکرول در صورت نیاز روی گوشی‌های خیلی کوچک */
+    overflow-x: hidden;
+  }
+
+  /* ============================
+     تنظیمات هدر (Header)
+  ============================ */
+  #header {
+    height: 70px;
+    padding: 0 10px;
+    justify-content: space-between; /* پخش کردن عناصر در عرض */
+  }
+
+  #header_left {
+    position: static;
+    width: auto;
+    gap: 10px;
+  }
+
+  /* نمایش آیکون همبرگری منو در موبایل */
+  #menu {
+    display: block;
+    cursor: pointer;
+    color: var(--text-main);
+  }
+
+  /* مخفی کردن متن‌های اضافی */
+  #double_click {
+    display: none;
+  }
+
+  /* کوچک کردن لوگو گوگل */
+  #header_img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* تنظیم دکمه دارک مود */
+  #dark_mode {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #moon {
+    font-size: 16px;
+  }
+
+  /* تنظیم نوار جستجو (کوچک کردن در موبایل) */
+  #header_right {
+    margin-left: 0;
+    width: 140px;
+    height: 35px;
+  }
+
+  #header_right svg {
+    display: none; /* مخفی کردن آیکون اضافی سرچ برای فضای بیشتر */
+    width: 40%;
+  }
+
+  #calculate {
+    font-size: 12px;
+  }
+
+  #back_to_width {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  /* دکمه ورود (فقط نمایش آیکون) */
+  #Enter {
+    position: static;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  #Enter p {
+    display: none; /* مخفی کردن کلمه log in */
+  }
+
+  #Enter img {
+    width: 50%;
+  }
+
+  /* ============================
+     تنظیمات سکشن و ماشین حساب
+  ============================ */
+  #section {
+    flex-direction: column; /* چیدمان ستونی برای موبایل */
+    height: calc(100vh - 70px);
+  }
+
+  #father_of_main_calculator {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    align-items: flex-start; /* چسبیدن ماشین حساب به بالا */
+    margin-top: 20px;
+  }
+
+  #main_calculator {
+    width: 100%;
+    height: auto;
+    padding: 15px 5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -5px var(--shadow-color);
+    gap: 15px;
+  }
+
+  /* باکس نمایش نتیجه */
+  #result {
+    width: 95%;
+    height: 75px;
+    font-size: 32px;
+    padding-right: 10px;
+    border-width: 3px; /* نازک‌تر شدن حاشیه */
+  }
+
+  #persons_calculate {
+    font-size: 16px;
+  }
+
+  /* ============================
+     تنظیمات دکمه‌های ماشین حساب
+  ============================ */
+  /* کم کردن فاصله بین ستون‌ها برای جا شدن 7 ستون */
+  #numbers_operators {
+    gap: 4px; 
+    width: 100%;
+    padding: 0 2px;
+  }
+
+  /* کم کردن فاصله بین دکمه‌های یک ستون */
+  #first_col, #second_col, #third_col, #forth_col, #fifth_col, #sixth_col, #seventh {
+    gap: 10px;
+  }
+
+  /* یکسان سازی و کوچک کردن تمام دکمه‌ها */
+  #pro, #pro1, #green_border, #red_border, #blue_border_copy {
+    width: 12vw; /* استفاده از عرض نسبی برای جا شدن دقیق 7 ستون */
+    max-width: 45px; /* حداکثر سایز برای تبلت‌ها */
+    height: 12vw;
+    max-height: 45px;
+    margin: 3px;
+    font-size: 14px; /* کوچک کردن فونت */
+    border-radius: 50%; /* گرد کردن دکمه‌ها برای ظاهر بهتر در موبایل */
+    border-width: 1px; /* نازک‌تر شدن حاشیه */
+  }
+
+  /* اصلاح دکمه‌های ستون سوم که در دسکتاپ عریض‌تر بودند */
+  #third_col #pro {
+    width: 12vw;
+    max-width: 45px;
+}
+
+  /* کوچک کردن SVG های داخل دکمه‌ها (مثل رادیکال و بک اسپیس) */
+  #numbers_operators svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* تنظیم دکمه مساوی (که ارتفاع دو برابر دارد) */
+  #black_border {
+    width: 12vw;
+    max-width: 45px;
+    height: calc(24vw + 4px); /* ارتفاع دو دکمه + گپ بینشان */
+    max-height: 94px;
+    font-size: 24px;
+    border-radius: 25px; /* کپسولی شکل */
+  }
+
+  /* ============================
+     تنظیمات منوی کناری (Nav) - تبدیل به منوی کشویی
+  ============================ */
+  #nav {
+    position: fixed;
+    top: 70px;
+    left: -100%; /* به صورت پیش‌فرض خارج از صفحه است */
+    width: 70%;
+    max-width: 250px;
+    height: calc(100vh - 70px);
+    border-right: none;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+  }
+
+  /* کلاسی که با جاوا اسکریپت باید اضافه شود تا منو باز شود */
+  #nav.active {
+    left: 0;
+  }
+
+  #history_box, #sciece_box {
+    width: 90%;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #blue_border_copy{
+    margin: 4px;
+  }
+  #black_border{
+    margin: 7px;
+  }
+  /* استایل مخصوص صفحه‌های خیلی کوچک (آیفون SE و قدیمی‌تر) */
+  @media (max-width: 360px) {
+    #pro, #pro1, #green_border, #red_border, #blue_border_copy, #third_col #pro {
+      font-size: 12px;
+    }
+    #result {
+      font-size: 26px;
+      height: 65px;
+    }
+    #header_right {
+      width: 110px;
+    }
+  }
+}

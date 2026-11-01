@@ -1,0 +1,462 @@
+<!doctype html>
+<!-- ============================================================ -->
+<!-- ===== اعلام نوع سند و زبان ===== -->
+<!-- ============================================================ -->
+<html>
+  <head>
+    <!-- ========================================================== -->
+    <!-- ===== متا تگ‌های مهم برای نمایش در موبایل و مرورگرها ===== -->
+    <!-- ========================================================== -->
+
+    <!-- ===== تنظیم اندازه صفحه برای موبایل ===== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- ===== سازگاری با مرورگرهای قدیمی ===== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ===== تگ‌های مربوط به اپل موبایل (Safari iOS) ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- ===== رنگ نوار بالای مرورگر در موبایل ===== -->
+    <meta name="theme-color" content="#4F46E5" />
+    <meta name="msapplication-TileColor" content="#4F46E5" />
+
+    <!-- ========================================================== -->
+    <!-- ===== لینک‌های فایل‌های CSS و آیکون ===== -->
+    <!-- ========================================================== -->
+
+    <!-- ===== فایل خروجی Tailwind ===== -->
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- ===== آیکون مرورگر (Favicon) ===== -->
+    <link rel="icon" href="./public/images/logo.svg" sizes="64x64" />
+
+    <!-- ===== فایل CSS سفارشی ===== -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- ===== عنوان صفحه ===== -->
+    <title>Amin Process</title>
+  </head>
+
+  <!-- ============================================================ -->
+  <!-- ===== بدنه اصلی صفحه ===== -->
+  <!-- ============================================================ -->
+  <body class="bg-primary-darkBlue select-none">
+
+    <!-- ============================================================ -->
+    <!-- ===== بخش هدر (بالای صفحه) ===== -->
+    <!-- ============================================================ -->
+    <header
+      id="header"
+      class="w-full gap-3 flex flex-col justify-center items-center mt-[10px]"
+    >
+      <!-- ===== منوی اصلی ===== -->
+      <nav class="flex justify-center items-center px-4 mt-2 w-[300px] mx-auto">
+        <div
+          id="mainMenu"
+          class="main_menu text-[10px] tracking-[0.5px] flex items-center font-medium text-white justify-between h-[44px] w-full px-5 py-2 rounded-full border border-white/10 bg-white/5 border-t border-t-white/15 backdrop-blur-lg shadow-2xl relative overflow-hidden cursor-pointer"
+        >
+          <a href="./src/pages/work.html" class="relative z-10 hover:text-white transition">WORK</a>
+          <a href="./src/pages/about.html" class="relative z-10 hover:text-white transition">ABOUT</a>
+          <a href="#" class="relative z-10 hover:text-white transition">CONTACT</a>
+          <a href="#" class="relative z-10 hover:text-white transition">COURSE</a>
+        </div>
+      </nav>
+
+      <!-- ===== دکمه تغییر تم (دارک مود) ===== -->
+      <div class="flex gap-2 justify-center items-center">
+        <img
+          id="moon"
+          class="transition duration-500 ease-in-out"
+          src="/public/images/moon.svg"
+          width="20%"
+          alt="moon"
+        />
+        <div
+          class="w-[25px] h-[25px] bg-primary-darkBlue border border-[1px] rounded-full flex items-center justify-center text-white font-bold text-sm"
+        ></div>
+        <img
+          id="sun"
+          class="transition duration-500 ease-in-out"
+          src="/public/images/sun.svg"
+          width="20%"
+          alt="sun"
+        />
+      </div>
+
+      <!-- ===== فلش پایین ===== -->
+      <div class="flex gap-[10px]">
+        <div class="w-[1px] h-[15px] bg-white rotate-[-50deg]"></div>
+        <div class="w-[1px] h-[15px] bg-white rotate-[50deg]"></div>
+      </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- ===== بخش اصلی (Main) ===== -->
+    <!-- ============================================================ -->
+    <main class="w-full">
+
+      <!-- ========================================================== -->
+      <!-- ===== بخش اول: کلمات DESIGN / DEVELOP / DEPLOY / DELIVER ===== -->
+      <!-- ========================================================== -->
+      <section class="w-full flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center font-title tracking-[1px] text-primary-indigo leading-headingTextSpace mt-[30px]"
+        >
+          <p class="text-headingDesign">DESIGN.</p><br />
+          <p class="text-headingDevelop">DEVELOP.</p><br />
+          <p class="text-headingDeploy">DEPLOY.</p><br />
+          <p class="text-headingDeliver">DELIVER.</p>
+        </div>
+
+        <!-- ===== SVG کارت‌های نمونه کارها ===== -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mt-[4rem] portfolio-cards"
+          viewBox="0 0 200 120"
+          width="230"
+          height="120"
+        >
+          <!-- ===== کارت اول ===== -->
+          <g class="card-1">
+            <rect x="5" y="10" width="55" height="80" rx="8" fill="none" stroke="white" stroke-width="1.2" opacity="0.3"/>
+            <rect x="12" y="18" width="41" height="35" rx="4" fill="white" opacity="0.1"/>
+            <rect x="12" y="60" width="25" height="4" rx="2" fill="white" opacity="0.3"/>
+            <rect x="12" y="68" width="35" height="3" rx="1.5" fill="white" opacity="0.15"/>
+          </g>
+
+          <!-- ===== کارت دوم ===== -->
+          <g class="card-2">
+            <rect x="72" y="5" width="55" height="90" rx="8" fill="none" stroke="white" stroke-width="1.5" opacity="0.6"/>
+            <rect x="79" y="13" width="41" height="40" rx="4" fill="white" opacity="0.15"/>
+            <rect x="79" y="60" width="30" height="5" rx="2" fill="white" opacity="0.4"/>
+            <rect x="79" y="70" width="40" height="3" rx="1.5" fill="white" opacity="0.2"/>
+            <rect x="79" y="77" width="25" height="3" rx="1.5" fill="white" opacity="0.15"/>
+          </g>
+
+          <!-- ===== کارت سوم ===== -->
+          <g class="card-3">
+            <rect x="140" y="10" width="55" height="80" rx="8" fill="none" stroke="white" stroke-width="1.2" opacity="0.3"/>
+            <rect x="147" y="18" width="41" height="35" rx="4" fill="white" opacity="0.1"/>
+            <rect x="147" y="60" width="25" height="4" rx="2" fill="white" opacity="0.3"/>
+            <rect x="147" y="68" width="35" height="3" rx="1.5" fill="white" opacity="0.15"/>
+          </g>
+        </svg>
+
+        <!-- ===== توضیحات زیر کارت‌ها ===== -->
+        <div class="mx-auto flex gap-3 flex-col">
+          <div
+            class="font-smalltext text-[13px] flex flex-col leading-[10px] justify-center items-center text-white text-opacity-50 mt-[20px] py-[10px]"
+          >
+            <p>Freelance Front-End Developer</p><br />
+            <p>crafting fast, accessible and</p><br />
+            <p>beautiful web experiences.</p>
+          </div>
+
+          <!-- ===== دکمه VIEW WORK ===== -->
+          <div class="flex flex-col justify-center items-center">
+            <img src="/public/images/workLogo.svg" width="30%" alt="" />
+            <p class="text-white text-opacity-50 text-[13px] hover:text-white">VIEW WORK</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ===== بخش دوم: پروژه‌ها ===== -->
+      <!-- ========================================================== -->
+      <section class="mt-[4rem] grid grid-cols-1">
+
+        <!-- ===== پروژه ۱: Taska Dashboard ===== -->
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue animate-boxSkewX w-[90%] h-[350px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="https://gapgpt.cloud/server_files/b72915ee-cebb-4e66-ae1b-65576332855a.png"
+            loading="lazy"
+            class="absolute rotate-[-30deg] right-[-40px] bottom-[10%]"
+            alt=""
+          />
+          <div
+            class="w-[300px] h-[300px] animate-backgroundColorChangeVerse bg-primary-indigo rounded-full blur-[40px] absolute top-[-40%] right-[-60%]"
+          ></div>
+          <div
+            class="w-[300px] h-[300px] animate-backgroundColorChange bg-primary-indigo rounded-full blur-[40px] absolute bottom-[-40%] right-[-70%]"
+          ></div>
+
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[30px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-3">
+              <p class="font-thinItalic text-white text-sm tracking-wider">01 ____</p>
+              <h1 class="text-white font-bold text-2xl md:text-4xl leading-tight mt-1">
+                Taska <br /> Dashboard
+              </h1>
+              <p class="text-utility-success mt-2">Html/Css/Tailwind/Js</p>
+            </div>
+            <a href="#">
+              <img src="./public/images/chechPage.svg" class="mt-[8rem]" alt="check-page" />
+            </a>
+          </div>
+        </div>
+
+        <!-- ===== پروژه ۲: Portfolio Template ===== -->
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue w-[90%] h-[180px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="./public/images/portofiloPaage.png"
+            loading="lazy"
+            class="rounded-[20px] w-[60%] absolute rotate-[30deg] right-[30%] bottom-[-70%]"
+            alt=""
+          />
+          <div
+            class="w-[300px] h-[300px] animate-backgroundColorChangeVerse bg-primary-indigo rounded-full blur-[40px] absolute top-[-60%] right-[-90%]"
+          ></div>
+
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[10px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-2">
+              <p class="font-thinItalic text-white text-sm tracking-wider">03 ____</p>
+              <h1 class="text-white font-regular text-2xl md:text-4xl leading-tight mt-0">
+                Portfolio <br /> Template
+              </h1>
+              <p class="text-utility-success mb-[10px]">Html/Css/Tailwind/Js</p>
+            </div>
+            <a href="#">
+              <img src="./public/images/chechPage.svg" class="mt-[0px]" alt="check-page" />
+            </a>
+          </div>
+        </div>
+
+        <!-- ===== پروژه ۳: Google Calculate ===== -->
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue w-[90%] h-[180px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="./public/images/googleCalculate.png"
+            loading="lazy"
+            class="rounded-[10px] w-[30%] absolute rotate-[0deg] right-[5%] bottom-[10%]"
+            alt=""
+          />
+          <div
+            class="w-[300px] h-[300px] animate-backgroundColorChangeVerse bg-primary-indigo rounded-full blur-[40px] absolute top-[-60%] right-[-90%]"
+          ></div>
+
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[10px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-2">
+              <p class="font-thinItalic text-white text-sm tracking-wider">03 ____</p>
+              <h1 class="text-white font-regular text-2xl md:text-4xl leading-tight mt-0">
+                Google <br /> Calculate
+              </h1>
+              <p class="text-utility-success mb-[10px]">Html/Css/Tailwind</p>
+            </div>
+            <a href="#">
+              <img src="./public/images/chechPage.svg" class="mt-[0px]" alt="check-page" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ===== بخش سوم: مهارت‌ها (SKILLS) ===== -->
+      <!-- ========================================================== -->
+      <section class="w-full flex flex-col items-start justify-start">
+        <div class="w-[90%] flex flex-col mx-0 gap-3">
+          <h3 class="text-text-purple ml-[25px] font-regular">SKILLS :</h3>
+          <h1 class="text-primary-indigo text-[30px] font-title ml-[25px]">
+            SKILLS THAT <br /> DRIVE SOLUTIONS
+          </h1>
+          <p class="text-white/50 ml-[25px] text-[10px]">
+            A blend of modern technologies and tools <br />
+            i use to build fast, scalable and beautiful <br />
+            digital experiences.
+          </p>
+        </div>
+
+        <!-- ===== باکس‌های مهارت ===== -->
+        <div class="mt-[20px] mx-auto flex gap-[20px] flex-col">
+
+          <!-- ===== HTML ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/HtmlNewLogo.png" class="mb-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">HTML</h2>
+                <h2 class="text-primary-indigo">80%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[80%] bg-utility-error rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CSS ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/CssLogo.png" class="mb-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">Css</h2>
+                <h2 class="text-primary-indigo">85%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[85%] bg-utility-info rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Tailwind ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/TailwindLogo.png" class="mb-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">Tailwind Css</h2>
+                <h2 class="text-primary-indigo">90%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[90%] bg-accent-develop rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== JavaScript ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/JsLogo.png" class="mb-[5px] rounded-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">JavaScript</h2>
+                <h2 class="text-primary-indigo">50%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[50%] bg-yellow-400 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== React ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/ReactLogo.png" class="mb-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">React</h2>
+                <h2 class="text-primary-indigo">40%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[40%] bg-accent-develop rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== TypeScript ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/TypeScriptLogo.png" class="mb-[5px] rounded-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">TypeScript</h2>
+                <h2 class="text-primary-indigo">33%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[33%] bg-accent-number02 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Python ===== -->
+          <div class="w-[300px] h-[80px] bg-primary-dark rounded-[10px] flex justify-center gap-3 items-center border border-r-darkIndigo border-t-darkIndigo border-darkIndigo/50 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0px_0px_40px_rgba(79,70,229,0.15)] transition duration-500 ease">
+            <img src="./public/images/PythonLogo.png" class="mb-[5px]" width="13%" alt="" />
+            <div class="w-[70%] flex flex-col gap-1">
+              <div class="flex justify-between items-center">
+                <h2 class="text-white font-regular text-[13px]">Python</h2>
+                <h2 class="text-primary-indigo">50%</h2>
+              </div>
+              <div class="w-[100%] h-[10px] rounded-full bg-gray-800">
+                <div class="h-full w-[50%] bg-primary-indigo rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- ===== فوتر (پایین صفحه) ===== -->
+    <!-- ============================================================ -->
+    <footer class="mt-[20px] flex flex-wrap justify-between items-center px-4 gap-2 mb-[10px]">
+      <p class="text-white font-thinItalic text-[13px]">aminprogram358@gmail.com</p>
+
+      <!-- ========================================================== -->
+      <!-- ===== شبکه‌های اجتماعی ===== -->
+      <!-- ========================================================== -->
+      <div class="flex gap-3">
+
+        <!-- ===== گیت‌هاب ===== -->
+        <div class="relative group">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white" class="cursor-pointer group-hover:fill-[#4F46E5] transition-all duration-300 group-hover:scale-110">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1.5 bg-[#4F46E5] text-white text-[10px] rounded-lg whitespace-nowrap opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg shadow-[#4F46E5]/30">
+            <a href="https://github.com" target="_blank" class="hover:underline">github.com/aminprogram358-ship-it</a>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#4F46E5]"></div>
+          </div>
+        </div>
+
+        <!-- ===== تلگرام ===== -->
+        <div class="relative group">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white" class="cursor-pointer group-hover:fill-[#4F46E5] transition-all duration-300 group-hover:scale-110">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+          <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#4F46E5] text-white text-[10px] rounded-lg whitespace-nowrap opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg shadow-[#4F46E5]/30">
+            <a href="https://t.me/aminnes" target="_blank" class="hover:underline">@NemidomanHichi</a>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#4F46E5]"></div>
+          </div>
+        </div>
+
+        <!-- ===== لینکدین ===== -->
+        <div class="relative group">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white" class="cursor-pointer group-hover:fill-[#4F46E5] transition-all duration-300 group-hover:scale-110">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#4F46E5] text-white text-[10px] rounded-lg whitespace-nowrap opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg shadow-[#4F46E5]/30">
+            <a href="https://linkedin.com/in/aminnes" target="_blank" class="hover:underline"></a>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#4F46E5]"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- ===== اسکریپت جاوااسکریپت ===== -->
+    <!-- ============================================================ -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
+
+
+
+<!---
+مشکل	توضیح	راه‌حل
+تکرار کد	باکس‌های مهارت ۷ بار تکرار شدن	یه کامپوننت بساز
+هدر و فوتر یکپارچه	تو یه فایل HTML هستن	جدا کن به header.html و footer.html
+عدم استفاده از JS ماژولار	همه چی تو main.js	تو فایل‌های جداگانه بنویس
+مسیرهای ثابت	./public/images/	از alias استفاده کن
+عدم استفاده از state management	برای دارک مود از JS ساده استفاده کردی	میتونستی
+-->

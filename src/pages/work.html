@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#4F46E5" />
+    <meta name="msapplication-TileColor" content="#4F46E5" />
+
+    <!-- ===== CSS ===== -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link rel="icon" href="../../public/images/logo.svg" sizes="64x64" />
+    <link rel="stylesheet" href="../../src/css/main.css" />
+
+    <title>Work-Palace</title>
+  </head>
+
+  <body class="bg-primary-darkBlue select-none">
+    <!-- ===== هدر ===== -->
+    <header
+      id="header"
+      class="w-full gap-3 flex flex-col justify-center items-center mt-[10px]"
+    >
+      <!-- برگشتن به صفحه اصلی-->
+      <a href="/index.html" class="m-0 absolute top-[4.5%] left-2"
+        ><img
+          src="../../public/images/backMainPage.svg"
+          class="lg:hidden mt-[2px] mr-[5px] rounded-full lg:hover:bg-gray-800 transition duration-200 ease"
+          alt="back"
+      /></a>
+      <!-- ===== منوی اصلی با id="nav" ===== -->
+      <nav
+        id="nav"
+        class="flex justify-center items-center px-4 mt-2 w-[300px] mx-auto"
+      >
+        <div
+          id="mainMenu"
+          class="main_menu text-[10px] tracking-[0.5px] flex items-center font-medium text-white justify-between h-[44px] w-full px-5 py-2 rounded-full border border-white/10 bg-white/5 border-t border-t-white/15 backdrop-blur-lg shadow-2xl relative overflow-hidden cursor-pointer"
+        >
+          <a href="#" class="relative z-10 hover:text-white transition">WORK</a>
+          <a href="../../src/pages/about.html" class="relative z-10 hover:text-white transition"
+            >ABOUT</a
+          >
+          <a href="#" class="relative z-10 hover:text-white transition"
+            >CONTACT</a
+          >
+          <a href="#" class="relative z-10 hover:text-white transition"
+            >COURSE</a
+          >
+        </div>
+      </nav>
+
+      <!-- ===== دکمه دارک مود ===== -->
+      <div class="flex gap-2 justify-center items-center">
+        <img
+          id="moon"
+          class="transition duration-500 ease-in-out"
+          src="../../public/images/moon.svg"
+          width="20%"
+          alt="moon"
+        />
+        <div
+          class="w-[25px] h-[25px] bg-primary-darkBlue border border-[1px] rounded-full flex items-center justify-center text-white font-bold text-sm"
+        ></div>
+        <img
+          id="sun"
+          class="transition duration-500 ease-in-out"
+          src="../../public/images/sun.svg"
+          width="20%"
+          alt="sun"
+        />
+      </div>
+
+      <!-- ===== فلش پایین ===== -->
+      <div class="flex gap-[10px]">
+        <div class="w-[1px] h-[15px] bg-white rotate-[-50deg]"></div>
+        <div class="w-[1px] h-[15px] bg-white rotate-[50deg]"></div>
+      </div>
+    </header>
+    <main class="grid grid-cols-1 gap-[3rem]">
+      <div class="w-full flex gap-[2rem] flex-col">
+        <div class="font-title flex justify-center items-center flex-col">
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] text-headingDevelop font-bold"
+          >
+            WORK THAT
+          </p>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] text-headingDevelop font-bold"
+          >
+            BUILDS
+          </p>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] text-headingDevelop font-bold"
+          >
+            BRANDS
+          </p>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] text-headingDevelop font-bold"
+          >
+            AND
+          </p>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] text-[40px] font-bold"
+          >
+            EXPERIENCES.
+          </p>
+        </div>
+
+        <div
+          class="text-white font-smalltext text-[13px] flex justify-center items-center flex-col"
+        >
+          <p>A selection of projects</p>
+          <p>where strategy design</p>
+          <p>and development come together.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-[1rem]">
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue w-[90%] h-[210px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="../../public/images/TaskaScreen.png"
+            loading="lazy"
+            class="absolute w-[60%] rounded-[10px] rotate-[-30deg] animate-boxSkewX right-[60px] bottom-[10%]"
+            alt=""
+          />
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[30px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-2">
+              <p class="font-thinItalic text-white text-sm tracking-wider">
+                01 ____
+              </p>
+              <h1
+                class="text-white font-bold text-2xl md:text-4xl leading-tight mt-1"
+              >
+                Taska <br />
+                Dashboard
+              </h1>
+              <p class="text-utility-success mt-2">Html/Css/Tailwind/Js</p>
+            </div>
+            <a
+              href="../../src/pages/TaskaMainProject/index.html"
+              class="mt-[10px]"
+            >
+              <img
+                src="../../public/images/chechPage.svg"
+                width="80%"
+                alt="check-page"
+              />
+            </a>
+          </div>
+          <div class="text-white font-smalltext text-[8px] text-center mt-[5px]">
+            Manage your daily tasks with a suitable UI for a better life.
+          </div>
+        </div>
+
+
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue w-[90%] h-[210px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="../../public/images/googleCalculate.png"
+            loading="lazy"
+            class="absolute w-[30%] rounded-[10px] rotate-[-30deg] animate-boxSkewX left-[60%] bottom-[10%]"
+            alt=""
+          />
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[30px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-2">
+              <p class="font-thinItalic text-white text-sm tracking-wider">
+                02 ____
+              </p>
+              <h1
+                class="text-white font-bold text-2xl md:text-4xl leading-tight mt-1"
+              >
+                Google <br />
+                Calculate
+              </h1>
+              <p class="text-utility-success mt-2">Html/Css/Tailwind</p>
+            </div>
+            <a
+              href="../../src/pages/MainGoogleCalculate/"
+              class="mt-[10px]"
+            >
+              <img
+                src="../../public/images/chechPage.svg"
+                width="80%"
+                alt="check-page"
+              />
+            </a>
+          </div>
+          <div class="text-white font-smalltext text-[8px] text-center mt-[5px]">
+            A calculate for google complex with different UI.
+          </div>
+        </div>
+
+        <div
+          tabindex="0"
+          class="bg-primary-darkBlue w-[90%] h-[210px] border border-white/25 border-r-white/15 overflow-hidden relative transition duration-500 ease focus:shadow-pink lg:hover:translate-y-[-10px] border-b-white/15 border-[1px] rounded-[7px] mx-auto shadow-main-soft mb-[30px]"
+        >
+          <img
+            src="../../public/images/googleCalculate.png"
+            loading="lazy"
+            class="absolute w-[30%] rounded-[10px] rotate-[-30deg] animate-boxSkewX left-[60%] bottom-[10%]"
+            alt=""
+          />
+          <div
+            id="information"
+            class="flex flex-col justify-start items-start mt-[30px] z-10 w-full h-full absolute top-0 left-0 px-8"
+          >
+            <div class="flex flex-col justify-center items-start gap-2">
+              <p class="font-thinItalic text-white text-sm tracking-wider">
+                02 ____
+              </p>
+              <h1
+                class="text-white font-bold text-2xl md:text-4xl leading-tight mt-1"
+              >
+                Google <br />
+                Calculate
+              </h1>
+              <p class="text-utility-success mt-2">Html/Css/Tailwind</p>
+            </div>
+            <a
+              href="../../src/pages/MainGoogleCalculate/"
+              class="mt-[10px]"
+            >
+              <img
+                src="../../public/images/chechPage.svg"
+                width="80%"
+                alt="check-page"
+              />
+            </a>
+          </div>
+          <div class="text-white font-smalltext text-[8px] text-center mt-[5px]">
+            A calculate for google complex with different UI.
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ============================================================ -->
+    <!-- ===== اسکریپت جاوااسکریپت ===== -->
+    <!-- ============================================================ -->
+    <script src="../../src/js/main.js"></script>
+  </body>
+</html>
